@@ -17,14 +17,29 @@ margin:0;
 .container{
 max-width:720px;
 margin:auto;
-padding:80px 20px;
+padding:60px 20px;
 text-align:center;
 }
 
-.success{
-font-size:48px;
-color:#22c55e;
-margin-bottom:10px;
+.success-icon{
+width:72px;
+height:72px;
+margin:0 auto 20px;
+border-radius:50%;
+background:#22c55e;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.success-icon svg{
+width:36px;
+height:36px;
+stroke:white;
+stroke-width:3;
+fill:none;
+stroke-linecap:round;
+stroke-linejoin:round;
 }
 
 h1{
@@ -57,7 +72,11 @@ margin-top:20px;
 
 <div class="container">
 
-<div class="success">✔</div>
+<div class="success-icon">
+<svg viewBox="0 0 24 24">
+<path d="M20 6L9 17l-5-5"></path>
+</svg>
+</div>
 
 <h1>Welcome to Clarity Cycle</h1>
 
@@ -93,7 +112,7 @@ Consistency beats intensity.
 
 </div>
 
-<p class="small">
+<p>
 Your first email arrives tomorrow morning.
 </p>
 
@@ -101,10 +120,11 @@ Your first email arrives tomorrow morning.
 A receipt has also been sent to your email by Stripe.
 </p>
 
-<p class="small">
+<p>
 — Andrew
 </p>
-
+<p class="small">If someone you care about would benefit from clearer thinking,
+feel free to share Clarity Cycle with them.</p>
 </div>
 
 </body>
