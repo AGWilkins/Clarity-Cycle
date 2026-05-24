@@ -40,7 +40,17 @@ max-width:760px;
 margin:auto;
 padding:10px 24px 100px;
 }
-
+.footer-note a,
+.footer-note a:visited,
+.footer-note a:hover,
+.footer-note a:active{
+  color:var(--text);
+  text-decoration:none;
+  border-bottom:1px solid rgba(30,42,56,0.2);
+}
+  a[href^="mailto"]{
+  color:var(--text) !important;
+}
 .logo{
 display:flex;
 align-items:center;
