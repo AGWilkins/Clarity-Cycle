@@ -32,7 +32,17 @@ body{
   line-height:1.75;
   -webkit-font-smoothing:antialiased;
 }
-
+.footer-note a,
+.footer-note a:visited,
+.footer-note a:hover,
+.footer-note a:active{
+  color:var(--text);
+  text-decoration:none;
+  border-bottom:1px solid rgba(30,42,56,0.2);
+}
+  a[href^="mailto"]{
+  color:var(--text) !important;
+}
 .container{
   max-width:760px;
   margin:0 auto;
@@ -478,8 +488,12 @@ p{
   </section>
 
   <div class="footer-note">
-    Questions? hello@clarity-cycle.com
-  </div>
+  Questions?<br><br>
+  If something doesn’t land properly, just ask.<br>
+  <a href="mailto:hello@clarity-cycle.com">
+    hello@clarity-cycle.com
+  </a>
+</div>
 
 </main>
 
