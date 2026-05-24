@@ -8,219 +8,379 @@
 
 <style>
 
-body{
-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-background:#F7F7F5;
-color:#1E2A38;
-margin:0;
-line-height:1.6;
-}
-a {
-  color: #1E2A38;
-  text-decoration: none;
+:root{
+--bg:#F7F7F5;
+--text:#1E2A38;
+--muted:#5E6670;
+--accent:#C9A45C;
+--card:#FFFFFF;
 }
 
-a:hover {
-  text-decoration: underline;
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+background:var(--bg);
+color:var(--text);
+line-height:1.65;
+-webkit-font-smoothing:antialiased;
+}
+.logo{
+  font-size:22px;
+}
+.logo-mark{
+  width:16px;
+  height:16px;
 }
 .container{
-max-width:720px;
+max-width:760px;
 margin:auto;
-padding:50px 20px;
+padding:60px 24px 100px;
 }
 
-h1{
-font-size:40px;
-margin-bottom:10px;
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+margin-bottom:50px;
+font-weight:600;
+letter-spacing:-0.02em;
 }
 
-h2{
-margin-top:30px;
+.logo-mark{
+width:14px;
+height:14px;
+border-radius:50%;
+background:var(--accent);
+opacity:0.85;
 }
 
-.tagline{
-font-size:20px;
-color:#444;
-margin-bottom:20px;
+.hero h1{
+font-size:56px;
+line-height:1.05;
+letter-spacing:-0.04em;
+margin:0 0 20px;
+font-weight:700;
+}
+
+.hero p{
+font-size:22px;
+color:var(--muted);
+margin:0 0 18px;
+}
+
+.section{
+margin-top:80px;
+}
+
+.section h2{
+font-size:28px;
+letter-spacing:-0.03em;
+margin-bottom:22px;
+}
+
+.muted{
+color:var(--muted);
+}
+
+.spacer{
+height:18px;
+}
+
+.quote-list{
+display:flex;
+flex-direction:column;
+gap:16px;
+margin-top:28px;
+}
+
+.quote{
+background:var(--card);
+padding:18px 20px;
+border-radius:16px;
+font-size:18px;
+box-shadow:0 1px 0 rgba(0,0,0,0.03);
+}
+
+.drill{
+background:var(--card);
+padding:30px;
+border-radius:20px;
+margin-top:25px;
+box-shadow:0 1px 0 rgba(0,0,0,0.04);
+}
+
+.drill-title{
+font-size:22px;
+font-weight:600;
+margin-bottom:18px;
+}
+
+.reflection{
+margin-top:22px;
+padding-top:20px;
+border-top:1px solid #ECE9E3;
 }
 
 .button{
 display:inline-block;
-background:#C9A45C;
+margin-top:28px;
+background:var(--accent);
 color:white;
 padding:16px 28px;
-border-radius:6px;
+border-radius:14px;
 text-decoration:none;
 font-weight:600;
-margin-top:20px;
+transition:0.2s ease;
+}
+
+.button:hover{
+opacity:0.92;
+transform:translateY(-1px);
 }
 
 .small{
-font-size:14px;
-color:#777;
-margin-top:10px;
+font-size:15px;
+color:var(--muted);
+margin-top:14px;
 }
 
-ul{
-padding-left:20px;
+.footer{
+margin-top:100px;
+padding-top:40px;
+border-top:1px solid #E8E5DE;
+color:var(--muted);
+font-size:15px;
 }
 
-footer{
-margin-top:80px;
-font-size:14px;
-color:#777;
+.icon{
+margin-right:8px;
+opacity:0.7;
+}
+
+@media (max-width:640px){
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+.section{
+margin-top:60px;
+}
+
+.quote{
+font-size:17px;
+}
+
 }
 
 </style>
-
 </head>
 
 <body>
 
 <div class="container">
 
+<div class="logo">
+<div class="logo-mark"></div>
+<div>Clarity Cycle</div>
+</div>
 
-<h1>Clarity Cycle</h1>
+<section class="hero">
 
-<p class="tagline">Think more clearly in five minutes a day.</p>
+<h1>Think more clearly in five minutes a day.</h1>
 
-<p>Most people think they can focus for five minutes.<br>
-Most people are wrong.</p>
+<p>Most people think they can focus for five minutes.</p>
 
-<p>Clarity Cycle is a simple daily practice to train attention and sharpen how you think.</p>
+<p>Most people are wrong.</p>
 
-<p>One short drill each morning.<br>
-No theory. No noise. Just practice.</p>
-
-<p><strong>Most people notice something within the first week: how automatic their thinking has become.</strong></p>
-
-<a class="button" href="https://buy.stripe.com/bJe00j6obal51Jy9vKaMU01">
-Start the first drill — £1.99/month
-</a>
-
-<p class="small">
-£1.99/month. One useful thing each morning. Cancel anytime.
-</p>
-Clarity Cycle is deliberately low-fi.
-
-<br>No dashboards. 
-  <br>No streaks. 
-  <br>No guru energy.
-
-<br>Just short daily practices designed to help people think, observe and respond more clearly.
-<p style="margin-top:22px;">
-<a href="/method.html" style="
-display:inline-block;
-padding:10px 18px;
-border:1px solid #D6D6D6;
-border-radius:6px;
-font-size:15px;
-font-weight:500;
-background:#fff;
-text-decoration:none;
-color:#1E2A38;
-">
-Read about the method →
-</a>
-</p>
-<h2>Example Drill</h2>
-
-<p><strong>Day 3 — Drift Detection</strong></p>
+<div class="spacer"></div>
 
 <p>
-For five minutes, sit normally.<br><br>
-
-Each time your mind wanders, say internally:<br>
-<strong>“Drift.”</strong><br><br>
-
-No suppression. Just detection.<br><br>
-
-Reflection: How quickly did drift appear?
+Clarity Cycle is a simple daily practice designed to sharpen attention and improve how you think.
 </p>
-
-<h2>Why This Exists</h2>
 
 <p>
-Most people train their bodies.<br>
-Almost nobody trains how they think.<br><br>
-
-Attention, decision-making, and pattern recognition determine how well you operate.<br><br>
-
-This trains them.
+One short drill each morning.
 </p>
 
-<h2>What You’ll Notice</h2>
-
-<ul>
-<li>You start catching attention drifting</li>
-<li>Patterns become clearer</li>
-<li>Decisions feel faster and cleaner</li>
-<li>Less reaction. More control</li>
-</ul>
-
-<h2>What People Say</h2>
-
-<p>
-“I didn’t realise how often I reached for my phone.” <br>
-“I pause before reacting now.” <br>
-“I stopped unconsciously reaching for sugar.”<br>
-“I noticed how fragmented my attention had become.”
-</p>
-
-<h2>How It Works</h2>
-
-<p>
-One 5-minute drill per day.<br>
-Each day targets a different aspect of thinking.<br>
-The effect compounds.
-</p>
-
-<h2>The Cycles</h2>
-
-<p>
-<strong>Cycle 1 — Foundation</strong><br>
-Attention stability, pattern recognition, decision clarity, bias awareness.<br><br>
-
-<strong>Cycle 2 — Pattern Recognition</strong><br>
-Detect persuasion, incentives, narrative structures.<br><br>
-
-<strong>Cycle 3 — Strategic Thinking</strong><br>
-Second-order thinking, probability, risk mapping.<br><br>
-
-<strong>Cycle 4 — Cognitive Endurance</strong><br>
-Focus, distraction resistance, mental stamina.<br><br>
-
-Each cycle builds on the last.
-</p>
-
-<h2>Begin</h2>
-
-<p>
-Do the 5-minute drill once.<br>
-Then get on with your day.
-</p>
-
-<p style="margin-top:20px;">
+<p class="muted">
 No streaks.<br>
 No notifications.<br>
 No endless content.
 </p>
 
-<a class="button" href="https://buy.stripe.com/bJe00j6obal51Jy9vKaMU01">
-Start the first drill — £1.99/month
-</a>
-
-<p class="small">
-£1.99/month. Cancel anytime.
+<p>
+Just short daily practices designed to help you think more clearly.
 </p>
 
+<a href="#" class="button">Start the first drill — £1.99/month</a>
 
-<h2>Questions?</h2>
-  If something doesn’t land properly, just ask.
-  <br><a href="mailto:hello@clarity-cycle.com">hello@clarity-cycle.com</a>
+<div class="small">
+£1.99/month. Cancel anytime.
+</div>
 
+</section>
 
-<footer>
-Clarity Cycle<br>
-A daily workout for your thinking.
-</footer>
+<section class="section">
+
+<h2>What people notice</h2>
+
+<div class="quote-list">
+
+<div class="quote">
+<span class="icon"></span>
+“I pause before reacting now.”
+</div>
+
+<div class="quote">
+<span class="icon"></span>
+“I reach for my phone less automatically.”
+</div>
+
+<div class="quote">
+<span class="icon"></span>
+“The thinking stays with me for the rest of the day.”
+</div>
+
+<div class="quote">
+<span class="icon"></span>
+“I didn’t realise how fragmented my attention had become.”
+</div>
+
+<div class="quote">
+<span class="icon"></span>
+“Decisions feel calmer, clearer and less rushed.”
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Example drill</h2>
+
+<div class="drill">
+
+<div class="drill-title">
+Day 3 — Drift Detection
+</div>
+
+<p>
+For five minutes, sit normally.
+</p>
+
+<p>
+Each time your mind wanders, say internally:
+</p>
+
+<p><strong>“Drift.”</strong></p>
+
+<p>
+No suppression. Just detection.
+</p>
+<div class = "why this works">
+  <p><strong>Why this works</strong></p>
+<p>This trains meta-awareness — the ability to detect when thinking has shifted automatically.</p>
+
+<div class="reflection">
+
+<p><strong>Reflection</strong></p>
+
+<p class="muted">
+How quickly did drift appear?
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+<section class="section">
+
+<h2>What people say</h2>
+
+<div class="quote-list">
+
+<div class="quote">
+“The discipline that 5 minutes a day installs is priceless.”
+</div>
+
+<div class="quote">
+“It’s subtle at first, then you notice it everywhere.”
+</div>
+
+<div class="quote">
+“You do the drill once. The thinking carries into the rest of the day.”
+</div>
+
+</div>
+
+</section>
+<h2>Why this exists</h2>
+
+<p>
+Modern life trains distraction extremely well.
+</p>
+
+<p>
+Very few people deliberately train attention, awareness or cognitive flexibility.
+</p>
+
+<p>
+Clarity Cycle was built to change that.
+</p>
+
+<div class="spacer"></div>
+
+<p>
+Five minutes.<br>
+Different angle each day.
+</p>
+
+<div class="spacer"></div>
+
+<p>
+Small practice.<br>
+Compounding effect.
+</p>
+
+<a href="#" class="button">Read about the method</a>
+
+</section>
+
+<section class="section">
+
+<h2>Begin</h2>
+
+<p>
+Do the 5-minute drill.<br>
+Then get on with your day.
+</p>
+
+<a href="#" class="button">Start the first drill — £1.99/month</a>
+
+</section>
+
+<div class="footer">
+
+Questions?<br><br>
+If something doesn’t land properly, just ask.<br>
+hello@clarity-cycle.com
+
+</div>
+
+</div>
+
+</body>
+</html>
