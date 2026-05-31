@@ -1,0 +1,186 @@
+Yes — here’s a clean **Resources page** version.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources | Clarity Cycle</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f7f3eb;
+      color: #1d2a3a;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    a {
+      color: #1d2a3a;
+      text-decoration: none;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 40px;
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 48px;
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
+
+    .intro {
+      font-size: 22px;
+      color: #3d4858;
+      margin-bottom: 48px;
+    }
+
+    .resource-card {
+      background: #efe6d4;
+      border: 1px solid #e2d7c4;
+      border-radius: 28px;
+      padding: 32px;
+      margin-bottom: 28px;
+    }
+
+    .resource-card h2 {
+      font-size: 30px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .resource-card p {
+      font-size: 18px;
+      color: #3d4858;
+      margin-bottom: 24px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #d2ad5f;
+      color: #ffffff;
+      font-weight: 700;
+      padding: 14px 24px;
+      border-radius: 999px;
+      margin-right: 12px;
+      margin-top: 8px;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: #1d2a3a;
+      border: 1px solid #d8cdbb;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 12px;
+    }
+
+    .footer {
+      margin-top: 60px;
+      font-size: 16px;
+      color: #5c6675;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 40px;
+      }
+
+      .intro {
+        font-size: 20px;
+      }
+
+      .resource-card {
+        padding: 26px;
+      }
+
+      .button {
+        display: block;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+
+    <a class="back-link" href="/">← Back to Clarity Cycle</a>
+
+    <h1>Resources</h1>
+
+    <p class="intro">
+      A few deeper routes into the thinking behind Clarity Cycle:
+      the audio discussion, the cognitive agility white paper, and the daily practice itself.
+    </p>
+
+    <section class="resource-card">
+      <h2>Audio Discussion</h2>
+      <p>
+        A 20-minute AI-generated discussion exploring attention, cognitive drift,
+        the intelligence trap, automatic behaviour, and why small daily attention
+        training can compound over time.
+      </p>
+
+      <audio controls preload="none">
+        <source src="clarity-cycle-method-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <a class="button secondary" href="clarity-cycle-method-audio.mp3" download>
+        Download Audio
+      </a>
+    </section>
+
+    <section class="resource-card">
+      <h2>Cognitive Agility White Paper</h2>
+      <p>
+        A deeper explanation of the ideas behind Clarity Cycle, including cognitive
+        agility, neuroplasticity, flow state, attention training and multi-lens thinking.
+      </p>
+
+      <a class="button" href="cognitive-agility-white-paper.pdf" download>
+        Download White Paper
+      </a>
+
+      <a class="button secondary" href="cognitive-agility-white-paper.pdf" target="_blank">
+        Open PDF
+      </a>
+    </section>
+
+    <section class="resource-card">
+      <h2>Start with one drill</h2>
+      <p>
+        Five minutes. A different angle each day.
+        Do the drill, then get on with your day.
+      </p>
+
+      <a class="button" href="/">
+        Start Clarity Cycle
+      </a>
+    </section>
+
+    <p class="footer">
+      Questions? If something doesn’t land properly, just ask:
+      <a href="mailto:hello@clarity-cycle.com">hello@clarity-cycle.com</a>
+    </p>
+
+  </main>
+</body>
+</html>
+```
