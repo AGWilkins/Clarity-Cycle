@@ -1,36 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 <title>The Method | Clarity Cycle</title>
-
 <style>
-  .site-header {
-    padding: 28px 20px 10px;
-    text-align: center;
-  }
-
-  .nav {
-    color: #777;
-    font-size: 15px;
-  }
-
-  .nav a {
-    color: #777;
-    text-decoration: none;
-    margin: 0 8px;
-  }
-
-  .nav a:hover {
-    color: #1f2a37;
-  }
-
-  .nav span {
-    color: #777;
-  }
+.site-header {
+  padding: 28px 20px 10px;
+  text-align: center;
+}
+.nav {
+  color: #777;
+  font-size: 15px;
+}
+.nav a {
+  color: #777;
+  text-decoration: none;
+  margin: 0 8px;
+}
+.nav a:hover {
+  color: #1f2a37;
+}
+.nav span {
+  color: #777;
+}
 :root{
   --bg:#F5F3EE;
   --text:#1E2A38;
@@ -40,11 +33,9 @@
   --accent:#C9A45C;
   --accent-soft:#EFE7D6;
 }
-
 *{
   box-sizing:border-box;
 }
-
 body{
   margin:0;
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
@@ -53,23 +44,11 @@ body{
   line-height:1.75;
   -webkit-font-smoothing:antialiased;
 }
-.footer-note a,
-.footer-note a:visited,
-.footer-note a:hover,
-.footer-note a:active{
-  color:var(--text);
-  text-decoration:none;
-  border-bottom:1px solid rgba(30,42,56,0.2);
-}
-  a[href^="mailto"]{
-  color:var(--text) !important;
-}
 .container{
   max-width:760px;
   margin:0 auto;
   padding:46px 24px 90px;
 }
-
 .topbar{
   display:flex;
   justify-content:space-between;
@@ -78,26 +57,18 @@ body{
   flex-wrap:wrap;
   margin-bottom:56px;
 }
-
 .back-link,
 .paper-link{
   color:var(--text);
   text-decoration:none;
   font-size:15px;
 }
-
 .paper-link{
   padding:10px 16px;
   border:1px solid var(--line);
   border-radius:999px;
   background:var(--soft);
 }
-
-.back-link:hover,
-.paper-link:hover{
-  opacity:0.75;
-}
-
 h1{
   font-size:52px;
   line-height:1.05;
@@ -105,73 +76,23 @@ h1{
   margin:0 0 22px;
   font-weight:720;
 }
-
 h2{
-  font-size:30px;
+  font-size:22px;
   line-height:1.2;
   letter-spacing:-0.035em;
   margin:70px 0 18px;
   font-weight:650;
 }
-
-h3{
-  font-size:20px;
-  margin:28px 0 8px;
-}
-
 p{
-  font-size:18px;
+  font-size:15px;
   margin:0 0 20px;
   color:#374151;
 }
-
 .intro{
-  font-size:22px;
+  font-size:15px;
   color:#303946;
   margin-bottom:34px;
 }
-
-.quiet{
-  color:var(--muted);
-}
-
-.card{
-  background:var(--soft);
-  border:1px solid var(--line);
-  border-radius:22px;
-  padding:34px;
-  margin:34px 0;
-}
-
-.card h2{
-  margin-top:0;
-}
-
-.divider{
-  height:1px;
-  background:var(--line);
-  margin:62px 0;
-}
-
-.principles{
-  display:grid;
-  gap:16px;
-  margin:28px 0 8px;
-}
-
-.principle{
-  background:var(--soft);
-  border:1px solid var(--line);
-  border-radius:18px;
-  padding:22px 24px;
-}
-
-.principle strong{
-  display:block;
-  margin-bottom:6px;
-  color:var(--text);
-}
-
 .quote{
   border-left:3px solid var(--accent);
   padding:14px 0 14px 22px;
@@ -179,7 +100,6 @@ p{
   color:#2F3945;
   font-size:20px;
 }
-
 .button{
   display:inline-block;
   background:var(--accent);
@@ -191,12 +111,10 @@ p{
   font-size:16px;
   transition:0.2s ease;
 }
-
 .button:hover{
   opacity:0.92;
   transform:translateY(-1px);
 }
-
 .secondary-button{
   display:inline-block;
   margin-left:10px;
@@ -209,13 +127,6 @@ p{
   font-weight:600;
   font-size:16px;
 }
-
-.white-paper{
-  margin-top:72px;
-  padding-top:44px;
-  border-top:1px solid var(--line);
-}
-
 .pdf-viewer{
   display:none;
   margin-top:34px;
@@ -224,7 +135,6 @@ p{
   overflow:hidden;
   background:white;
 }
-
 .cta{
   margin-top:70px;
   padding:38px;
@@ -233,49 +143,56 @@ p{
   color:var(--text);
   border-radius:24px;
 }
-
 .cta h2{
   margin-top:0;
 }
-
 .footer-note{
   margin-top:64px;
   font-size:15px;
   color:var(--muted);
 }
-
+.footer-note a,
+.footer-note a:visited,
+.footer-note a:hover,
+.footer-note a:active{
+  color:var(--text);
+  text-decoration:none;
+  border-bottom:1px solid rgba(30,42,56,0.2);
+}
+footer{
+  margin-top:80px;
+  padding-top:30px;
+  border-top:1px solid #d8cdbb;
+  text-align:center;
+  font-size:15px;
+  color:#666;
+}
+footer a{
+  color:inherit;
+  text-decoration:none;
+}
 @media (min-width:900px){
   .pdf-viewer{
     display:block;
   }
 }
-
 @media (max-width:640px){
   .container{
     padding:34px 20px 72px;
   }
-
   h1{
     font-size:40px;
   }
-
   h2{
     font-size:26px;
     margin-top:54px;
   }
-
   p{
-    font-size:17px;
+    font-size:15px;
   }
-
   .intro{
-    font-size:20px;
+    font-size:15px;
   }
-
-  .card{
-    padding:26px;
-  }
-
   .secondary-button{
     margin-left:0;
     margin-top:12px;
@@ -283,278 +200,211 @@ p{
 }
 </style>
 </head>
-
 <body>
 <header class="site-header">
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <span>|</span>
-      <a href="method.html">Method</a>
-      <span>|</span>
-      <a href="resources.html">Resources</a>
-      <span>|</span>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <span>|</span>
+    <a href="method.html">Method</a>
+    <span>|</span>
+    <a href="resources.html">Resources</a>
+    <span>|</span>
+    <a href="about.html">About</a>
+  </nav>
+</header>
 <main class="container">
-
   <nav class="topbar">
     <a class="back-link" href="/">← Back to Clarity Cycle</a>
     <a class="paper-link" href="cognitive-agility-white-paper.pdf" download>Download White Paper</a>
   </nav>
-
   <header>
     <h1>The Method</h1>
-
-    <p class="intro">
-      Clarity Cycle is a quiet daily practice for training attention, awareness and clearer thinking.
-    </p>
-
-    <p>
-      The idea is simple: five minutes of directed attention, repeated consistently, can change how you notice, decide and respond.
-    </p>
-
-    <p>
-      It is not a course to complete or content to consume. It is closer to a small daily exercise for the mind.
-    </p>
+<p class="intro">
+  Clarity Cycle trains the cognitive skills beneath almost everything else.
+</p>
+<p>
+  Attention. Pattern recognition. Decision-making. Cognitive endurance.
+</p>
+<p>
+  These are not usually taught directly in school, university or most careers. Clarity Cycle trains them through short daily drills.
+</p>
   </header>
-
-<section>
+  <section>
     <h2>Why five minutes?</h2>
-
-    <p>
-      Five minutes is short enough to do consistently, but long enough to reveal something useful.
-    </p>
-
-    <p>
-      You notice drift. You notice impatience. You notice assumptions. You notice the small automatic movements of attention that usually pass unseen.
-    </p>
-
-    <p>
-      The point is not intensity.
-    </p>
-
-    <p>
-      The point is repetition.
-    </p>
-
-    <p>
-      Small practice. Compounding effect.
-    </p>
+<p>
+  Five minutes is short enough to repeat, but long enough to reveal something useful.
+</p>
+<p>
+  You notice drift. You notice impatience. You notice assumptions. You notice the small automatic movements of attention that usually pass unseen.
+</p>
+<p>
+  The point is not intensity.
+</p>
+<p>
+  The point is repetition.
+</p>
+<p>
+  <strong>Small practice. Compounding effect.</strong>
+</p>
   </section>
-
+  <section>
+    <h2>The foundation</h2>
+<p>
+  The first four Clarity Cycles build the foundation.
+</p>
+<p>
+  <strong>Cycle 1</strong> — Attention<br>
+  <strong>Cycle 2</strong> — Pattern Recognition<br>
+  <strong>Cycle 3</strong> — Strategic Thinking<br>
+  <strong>Cycle 4</strong> — Cognitive Endurance
+</p>
+<p>
+  Later cycles apply the same skills to health, money, AI, creativity, relationships and other real-world domains.
+</p>
+<div class="quote">
+  The topics change. The thinking skills remain the same.
+</div>
+  </section>
   <section>
     <h2>Why I built it</h2>
-
-    <p>
-      Clarity Cycle emerged from years spent in environments where judgement, perception and decision quality mattered.
-    </p>
-
-    <p>
-      My background spans electronic trading, risk, governance and behavioural surveillance across global financial markets — environments where small lapses in thinking can create significant consequences.
-    </p>
-
-    <p>
-      Alongside that, I have spent decades studying martial arts and practising structured approaches to attention, composure and decision-making under pressure.
-    </p>
-
-    <p>
-      Over time, the question became simple:
-    </p>
-
-    <div class="quote">
-      Can thinking itself be trained in small daily ways that improve how people observe, decide, communicate and respond?
-    </div>
-
-    <p>
-      Clarity Cycle is my answer to that question.
-    </p>
+<p>
+  Clarity Cycle emerged from years spent in environments where judgement, perception and decision quality mattered.
+</p>
+<p>
+  My background spans trading, risk, electronic markets, governance and behavioural surveillance — environments where small lapses in attention can create significant consequences.
+</p>
+<p>
+  Alongside that, I have spent decades studying martial arts and practical approaches to attention, composure and decision-making under pressure.
+</p>
+<p>
+  Over time, the question became simple:
+</p>
+<div class="quote">
+  Can thinking itself be trained in small daily ways that improve how people observe, decide and respond?
+</div>
+<p>
+  Clarity Cycle is my answer to that question.
+</p>
   </section>
-
   <section>
     <h2>The design philosophy</h2>
-
-    <p>
-      Clarity Cycle is deliberately low-noise.
-    </p>
-
-    <p>
-      Modern self-improvement often adds more dashboards, more content, more reminders and more things to track. Clarity Cycle moves in the opposite direction.
-    </p>
-
-   <p><strong>No endless content.</strong>
-        Nothing to binge. Nothing to catch up on.</p>
-        
-     
-  <p><strong>No streak addiction.</strong>
-        Miss a day, return the next day.
- </p>
-     <p><strong>No notifications.</strong>
-        The aim is not to capture more of your attention.
-    </p>   
- 
-<p> <strong>No guru/student dynamic.</strong>
-        The drills do not tell you what to think. They help you notice your own thinking more clearly.</p>
-    
- 
-
-    <p>
-      The aim is not to keep people inside the product.
-    </p>
-
-    <p>
-      The aim is to sharpen the attention they take back into the rest of their life.
-    </p>
+<p>
+  Clarity Cycle is deliberately low-noise.
+</p>
+<p>
+  Modern self-improvement often adds more dashboards, more content, more reminders and more things to track. Clarity Cycle moves in the opposite direction.
+</p>
+<p><strong>No endless content.</strong><br>
+Nothing to binge. Nothing to catch up on.</p>
+<p><strong>No streak addiction.</strong><br>
+Miss a day, return the next day.</p>
+<p><strong>No notifications.</strong><br>
+The aim is not to capture more of your attention.</p>
+<p><strong>No guru/student dynamic.</strong><br>
+The drills do not tell you what to think. They help you notice your own thinking more clearly.</p>
+<p>
+  The aim is not to keep people inside the product.
+</p>
+<p>
+  The aim is to sharpen the attention they take back into the rest of their life.
+</p>
   </section>
-
   <section>
     <h2>What changes?</h2>
-
-      The changes are usually quiet at first.
- <br>
-      A pause before reacting. A drifting thought noticed sooner. A weak assumption spotted earlier. A little more space before an automatic behaviour takes over.
-  <br>
-      The world feels slightly less automatic.
-    <br>
-     At first, the shifts seem small. Over time, they compound.
-    <br>
-      Thinking becomes calmer. Clearer. Less reactive. Decisions improve. Attention stabilises. Behaviour changes.
-    <br>
-    And life gradually improves with it.
-    </p>
+<p>
+  The changes are usually quiet at first.
+</p>
+<p>
+  A pause before reacting. A drifting thought noticed sooner. A weak assumption spotted earlier. A little more space before an automatic behaviour takes over.
+</p>
+<p>
+  The world feels slightly less automatic.
+</p>
+<p>
+  At first, the shifts seem small. Over time, they compound.
+</p>
+<p>
+  Thinking becomes calmer, clearer and less reactive. Decisions improve. Attention stabilises. Behaviour changes.
+</p>
   </section>
-
-  <section>
-    <h2>The wider framework</h2>
-
-    <p>
-      The daily drills gradually move through different layers of cognition: attention, pattern recognition, decision-making, emotional regulation, systems thinking, communication and judgement under uncertainty.
-    </p>
-
-    <p>
-      Later cycles also explore how to work alongside increasingly powerful AI tools without outsourcing curiosity, judgement or responsibility.
-    </p>
-
-    <p>
-      The purpose is not to become dependent on a system.
-    </p>
-
-    <p>
-      The purpose is to become less automatic.
-    </p>
-  </section>
-
   <section>
     <h2>Why it works</h2>
-
-    <p>
-      Most people do not lack information.
-    </p>
-
-    <p>
-      They lack trained attention.
-    </p>
-
-    <p>
-      Clarity Cycle uses short, varied drills to practise attention, metacognition, pattern recognition and judgement in a repeatable way.
-    </p>
-
-    <p>
-      Each drill is deliberately small. The value comes from the cumulative effect.
-    </p>
+<p>
+  Most people do not lack information.
+</p>
+<p>
+  They lack trained attention.
+</p>
+<p>
+  Clarity Cycle uses short, varied drills to practise attention, metacognition, pattern recognition and judgement in a repeatable way.
+</p>
+<p>
+  Each drill is deliberately small. The value comes from the cumulative effect.
+</p>
   </section>
-<section class="audio-section">
-  <h2>Audio Discussion</h2>
-
-  <p>
-    A short AI-generated discussion exploring the ideas behind Clarity Cycle:
-    attention, cognitive drift, the intelligence trap, automatic behaviour,
-    and why small daily attention training can compound over time.
-  </p>
-
-  <p>
-    Listen while walking, commuting or making coffee.
-  </p>
-
-  <audio controls preload="none" style="width: 100%; margin-top: 1rem;">
-    <source src="clarity-cycle-method-audio.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</section>
+  <section>
+    <h2>Audio discussion</h2>
+<p>
+  A short AI-generated discussion exploring the ideas behind Clarity Cycle: attention, cognitive drift, the intelligence trap, automatic behaviour and why small daily attention training can compound over time.
+</p>
+<p>
+  Listen while walking, commuting or making coffee.
+</p>
+<audio controls preload="none" style="width:100%; margin-top:1rem;">
+  <source src="clarity-cycle-method-audio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+  </section>
   <section>
     <h2>Cognitive Agility White Paper</h2>
-
-    <p>
-      For a deeper explanation of the ideas behind Clarity Cycle, I have written a white paper on cognitive agility, neuroplasticity, flow state and multi-lens thinking.
-    </p>
-
-    <p>
-      It expands the science and philosophy behind the daily practice.
-    </p>
-
-    <a class="button" href="cognitive-agility-white-paper.pdf" download>Download White Paper</a>
-    <a class="secondary-button" href="cognitive-agility-white-paper.pdf">Open PDF</a>
-
-    <div class="pdf-viewer">
-      <iframe
-        src="cognitive-agility-white-paper.pdf"
-        width="100%"
-        height="700px">
-      </iframe>
-    </div>
+<p>
+  For a deeper explanation of the ideas behind Clarity Cycle, I have written a white paper on cognitive agility, neuroplasticity, flow state and multi-lens thinking.
+</p>
+<p>
+  It expands the science and philosophy behind the daily practice.
+</p>
+<a class="button" href="cognitive-agility-white-paper.pdf" download>Download White Paper</a>
+<a class="secondary-button" href="cognitive-agility-white-paper.pdf">Open PDF</a>
+<div class="pdf-viewer">
+  <iframe
+    src="cognitive-agility-white-paper.pdf"
+    width="100%"
+    height="700px">
+  </iframe>
+</div>
   </section>
-
   <section class="cta">
     <h2>Start with one drill</h2>
-
-    <p>
-      Five minutes. A different angle each day.
-    </p>
-
-    <p>
-      Do the drill. Then get on with your day.
-    </p>
-
-    <a class="button" href="/">Return to Clarity Cycle</a>
+<p>
+  Five minutes. A different angle each day.
+</p>
+<p>
+  Do the drill. Then get on with your day.
+</p>
+<a class="button" href="/">Return to Clarity Cycle</a>
   </section>
-
   <div class="footer-note">
-  Questions?<br>
-  If something doesn’t land properly, just ask.<br>
-  <a href="mailto:hello@clarity-cycle.com">
-    hello@clarity-cycle.com
-  </a>
-</div>
-  <footer style="
-    margin-top: 80px;
-    padding-top: 30px;
-    border-top: 1px solid #d8cdbb;
-    text-align: center;
-    font-size: 15px;
-    color: #666;
-">
-
-    <p style="margin-bottom: 12px;">
-        Small practice. Compounding effect.
+    Questions?<br>
+    If something doesn’t land properly, just ask.<br>
+    <a href="mailto:andrew@clarity-cycle.com">andrew@clarity-cycle.com</a>
+  </div>
+  <footer>
+    <p style="margin-bottom:12px;">
+      Small practice. Compounding effect.
     </p>
-
-    <p style="margin-bottom: 12px;">
-        <a href="index.html" style="color: inherit; text-decoration: none;">Home</a>
-        &nbsp;|&nbsp;
-        <a href="method.html" style="color: inherit; text-decoration: none;">Method</a>
-        &nbsp;|&nbsp;
-        <a href="resources.html" style="color: inherit; text-decoration: none;">Resources</a>
-      &nbsp;|&nbsp;
-      <a href="about.html" style="color: inherit; text-decoration: none;">About</a>
-    </p>
-
-    <p style="font-size: 14px;">
-        Five minutes. One drill. Different angle each day.
-    </p>
-
-</footer>
-
+<p style="margin-bottom:12px;">
+  <a href="index.html">Home</a>
+  &nbsp;|&nbsp;
+  <a href="method.html">Method</a>
+  &nbsp;|&nbsp;
+  <a href="resources.html">Resources</a>
+  &nbsp;|&nbsp;
+  <a href="about.html">About</a>
+</p>
+<p style="font-size:14px;">
+  Five minutes. One drill. Different angle each day.
+</p>
+  </footer>
 </main>
-
 </body>
 </html>
