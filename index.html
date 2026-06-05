@@ -3,203 +3,132 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Clarity Cycle</title>
-
 <style>
-.site-header {
-    padding: 28px 20px 10px;
-    text-align: center;
-  }
-
-  .nav {
-    color: #777;
-    font-size: 15px;
-  }
-
-  .nav a {
-    color: #777;
-    text-decoration: none;
-    margin: 0 8px;
-  }
-
-  .nav a:hover {
-    color: #1f2a37;
-  }
-
-  .nav span {
-    color: #777;
-  }
 :root{
---bg:#F7F7F5;
---text:#1E2A38;
---muted:#5E6670;
---accent:#C9A45C;
---card:#FFFFFF;
+  --bg:#F7F7F5;
+  --text:#1E2A38;
+  --muted:#5E6670;
+  --accent:#C9A45C;
+  --card:#FFFFFF;
 }
-
 *{
-box-sizing:border-box;
+  box-sizing:border-box;
 }
- .site-header {
-    padding: 28px 20px;
-    text-align: center;
-  }
 body{
-margin:0;
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-background:var(--bg);
-color:var(--text);
-line-height:1.65;
--webkit-font-smoothing:antialiased;
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.site-header{
+  padding:28px 20px;
+  text-align:center;
+}
+.nav{
+  color:#777;
+  font-size:15px;
+}
+.nav a{
+  color:#777;
+  text-decoration:none;
+  margin:0 8px;
+}
+.nav a:hover{
+  color:var(--text);
+}
+.nav span{
+  color:#777;
+}
+.container{
+  max-width:760px;
+  margin:auto;
+  padding:10px 24px 100px;
 }
 .logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:24px;
+  font-weight:700;
+  letter-spacing:-0.04em;
   font-size:42px;
 }
 .logo-mark{
   width:16px;
   height:16px;
+  border-radius:50%;
+  background:var(--accent);
+  opacity:0.85;
+  flex-shrink:0;
 }
-.container{
-max-width:760px;
-margin:auto;
-padding:10px 24px 100px;
-}
-.footer-note a,
-.footer-note a:visited,
-.footer-note a:hover,
-.footer-note a:active{
-  color:var(--text);
-  text-decoration:none;
-  border-bottom:1px solid rgba(30,42,56,0.2);
-}
-  a[href^="mailto"]{
-  color:var(--text) !important;
-}
-.logo{
-display:flex;
-align-items:center;
-gap:12px;
-margin-bottom:10px;
-font-weight:600;
-letter-spacing:-0.02em;
-}
-
-.logo-mark{
-width:14px;
-height:14px;
-border-radius:50%;
-background:var(--accent);
-opacity:0.85;
-}
-
 .hero h1{
-font-size:22px;
-line-height:1.05;
-letter-spacing:-0.04em;
-margin:0 0 10px;
-font-weight:700;
+  font-size:42px;
+  line-height:1.08;
+  letter-spacing:-0.05em;
+  margin:0 0 24px;
+  font-weight:800;
 }
-
 .hero p{
-font-size:22px;
-color:var(--muted);
-margin:0 0 10px;
+  font-size:22px;
+  color:var(--text);
+  margin:0 0 22px;
 }
-
 .section{
-margin-top:20px;
+  margin-top:56px;
 }
-
 .section h2{
-font-size:22px;
-letter-spacing:-0.03em;
-margin-bottom:10px;
+  font-size:34px;
+  line-height:1.15;
+  letter-spacing:-0.045em;
+  margin:0 0 24px;
 }
-
+.section p{
+  font-size:22px;
+  margin:0 0 22px;
+}
 .muted{
-color:var(--muted);
+  color:var(--muted);
 }
-
-.spacer{
-height:18px;
-}
-
-.quote-list{
-display:flex;
-flex-direction:column;
-gap:16px;
-margin-top:10px;
-}
-
-.quote{
-background:var(--card);
-padding:10px 10px;
-border-radius:16px;
-font-size:18px;
-box-shadow:0 1px 0 rgba(0,0,0,0.03);
-}
-
-.drill{
-background:var(--card);
-padding:30px;
-border-radius:20px;
-margin-top:10px;
-box-shadow:0 1px 0 rgba(0,0,0,0.04);
-}
-
-.drill-title{
-font-size:20px;
-font-weight:600;
-margin-bottom:10px;
-}
-
-.reflection{
-margin-top:10px;
-padding-top:20px;
-border-top:1px solid #ECE9E3;
-}
-
 .button{
-display:inline-block;
-margin-top:10px;
-background:var(--accent);
-color:white;
-padding:16px 28px;
-border-radius:14px;
-text-decoration:none;
-font-weight:600;
-transition:0.2s ease;
+  display:inline-block;
+  margin-top:12px;
+  background:var(--accent);
+  color:white;
+  padding:16px 28px;
+  border-radius:14px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:18px;
+  transition:0.2s ease;
 }
-
 .button:hover{
-opacity:0.92;
-transform:translateY(-1px);
+  opacity:0.92;
+  transform:translateY(-1px);
 }
-
 .small{
-font-size:15px;
-color:var(--muted);
-margin-top:14px;
+  font-size:16px;
+  color:var(--muted);
+  margin-top:14px;
 }
-
-.footer{
-margin-top:100px;
-padding-top:40px;
-border-top:1px solid #E8E5DE;
-color:var(--muted);
-font-size:15px;
+.quote{
+  font-size:22px;
+  margin-bottom:28px;
 }
-
-.icon{
-margin-right:8px;
-opacity:0.7;
+.drill{
+  background:var(--card);
+  padding:28px;
+  border-radius:20px;
+  box-shadow:0 1px 0 rgba(0,0,0,0.04);
 }
-
-@media (max-width:640px){
-
-.hero h1{
-font-size:25px;
+.drill p{
+  font-size:21px;
+}
+.footer-note{
+  margin-top:70px;
+  font-size:20px;
 }
 .footer-note a,
 .footer-note a:visited,
@@ -209,285 +138,172 @@ font-size:25px;
   text-decoration:none;
   border-bottom:1px solid rgba(30,42,56,0.2);
 }
-  a[href^="mailto"]{
-  color:var(--text) !important;
+footer{
+  margin-top:80px;
+  padding-top:30px;
+  border-top:1px solid #d8cdbb;
+  text-align:center;
+  font-size:15px;
+  color:#666;
 }
-.hero p{
-font-size:20px;
+footer a{
+  color:inherit;
+  text-decoration:none;
 }
-
-.section{
-margin-top:10px;
+@media (max-width:640px){
+  .container{
+    padding:10px 28px 90px;
+  }
+  .logo{
+    font-size:42px;
+  }
+  .hero h1{
+    font-size:40px;
+  }
+  .hero p,
+  .section p,
+  .quote{
+    font-size:22px;
+  }
+  .section{
+    margin-top:52px;
+  }
+  .section h2{
+    font-size:34px;
+  }
+  .button{
+    width:100%;
+    text-align:center;
+    font-size:18px;
+  }
 }
-
-.quote{
-font-size:17px;
-}
-
-}
-
 </style>
 </head>
-
 <body>
 <header class="site-header">
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <span>|</span>
-      <a href="method.html">Method</a>
-      <span>|</span>
-      <a href="resources.html">Resources</a>
-      <span>|</span>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <span>|</span>
+    <a href="method.html">Method</a>
+    <span>|</span>
+    <a href="resources.html">Resources</a>
+    <span>|</span>
+    <a href="about.html">About</a>
+  </nav>
+</header>
 <div class="container">
-
-<div class="logo">
-<div class="logo-mark"></div>
-<div>Clarity Cycle</div>
-</div>
-
-<section class="hero">
-
-<h1>Think more clearly in five minutes a day.</h1>
-
-<br>Most people think they can focus for five minutes.
-
-<br>Most people are wrong.
-
-
-<br>
-Clarity Cycle is a simple daily practice designed to sharpen attention and improve how you think.
-
-
-<br>
-One short drill each morning.
-
-<br><br>Clarity Cycle is deliberately low-fi.
-<br>
+  <div class="logo">
+    <div class="logo-mark"></div>
+    <div>Clarity Cycle</div>
+  </div>
+  <section class="hero">
+    <h1>Think more clearly in five minutes a day.</h1>
+<p>Train the cognitive skills nobody teaches in school, university or most careers.</p>
+<p>Clarity Cycle is a simple daily practice designed to sharpen attention, improve decision-making and strengthen how you think.</p>
+<p>One short drill each morning.</p>
+<p>Deliberately low-fi.<br>
 No streaks.<br>
 No notifications.<br>
 No dashboards.<br>
-No guru energy. <br>
-
-<br>
-Just short daily practices designed to help you think more clearly.
-  <br><br>
-
+No guru energy.</p>
+<p>Just short daily practices designed to help you think more clearly.</p>
 <a href="https://buy.stripe.com/bJe00j6obal51Jy9vKaMU01" class="button">Start the first drill — £1.99/month</a>
-
-<div class="small">
-£1.99/month. Cancel anytime.
-</div>
-
-</section>
-
-<section class="section">
-
-<h2>What people notice</h2>
-
-
-
-“I pause before reacting now.”
-<br><br>
-
-
-“I reach for my phone less automatically.”
-
-
-<br><br>
-“The thinking stays with me for the rest of the day.”
-
-
-<br><br>
-“I didn’t realise how fragmented my attention had become.”
-
-<br><br>
-“Decisions feel calmer, clearer and less rushed.”
-
-
-
-</section>
-
-<section class="section">
-
-<h2>Example drill</h2>
-
-
-
-Day 3 — Drift Detection
-
-
-<br>
-For five minutes, sit normally.
-<br>
-
-
-Each time your mind wanders, say internally:
-<br>
-
-<p><strong>“Drift.”</strong></p>
-
-
-No suppression. Just detection.
-<br>
-
+<div class="small">£1.99/month. Cancel anytime.</div>
+  </section>
+  <section class="section">
+    <h2>What are you actually training?</h2>
+<p>School teaches subjects.<br>
+University teaches subjects.<br>
+Most careers teach subjects.</p>
+<p>Very few people are ever taught how to think about those subjects.</p>
+<p>Attention.<br>
+Pattern recognition.<br>
+Decision-making.<br>
+Cognitive endurance.</p>
+<p>These skills influence almost everything:</p>
+<p>Health.<br>
+Money.<br>
+Work.<br>
+Relationships.<br>
+AI.</p>
+<p>The first four Clarity Cycles build the foundation.</p>
+<p>Later cycles explore health, money, work, creativity, AI and other real-world domains.</p>
+<p><strong>The topics change.<br>
+The thinking skills remain the same.</strong></p>
+  </section>
+  <section class="section">
+    <h2>What people notice</h2>
+<div class="quote">“I pause before reacting now.”</div>
+<div class="quote">“I reach for my phone less automatically.”</div>
+<div class="quote">“The thinking stays with me for the rest of the day.”</div>
+<div class="quote">“I didn’t realise how fragmented my attention had become.”</div>
+<div class="quote">“Decisions feel calmer, clearer and less rushed.”</div>
+  </section>
+  <section class="section">
+    <h2>Example drill</h2>
+<div class="drill">
+  <p><strong>Day 3 — Drift Detection</strong></p>
+  <p>For five minutes, sit normally.</p>
+  <p>Each time your mind wanders, say internally:</p>
+  <p><strong>“Drift.”</strong></p>
+  <p>No suppression. Just detection.</p>
   <p><strong>Why this works</strong></p>
-<p>This trains meta-awareness — the ability to detect when thinking has shifted automatically.</p>
-
-<p><strong>Reflection</strong></p>
-
-
-How quickly did drift appear?
-
-
-</section>
-
-
-<div class="spacer"></div>
-<h2>Why this exists</h2>
-<p>Most people train their bodies. Almost nobody trains how they think.<p>
-
-
-<p>
-Attention, decision-making, and pattern recognition determine how well you operate.
-</p>
-
-<p>
-Clarity Cycle was built to train that.
-</p>
-  <div class="spacer"></div>
-<section class="section">
-<h2>What are you actually training?</h2>
-
-<p>
-School teaches subjects.
-
-<br>University teaches subjects.
-<br>
-Most careers teach subjects.
-</p>
-
-<p>
-Very few people are ever taught how to think about those subjects.
-</p>
-
-<p>
-Attention.
-<br>
-Pattern recognition.
-<br>
-Decision-making.
-<br>
-Cognitive endurance.
-</p>
-
-<p>
-These skills influence almost everything:
-</p>
-
-<p>
-Health.
-<br>
-Money.
-<br>
-Work.
-<br>
-Relationships.
-<br>
-AI.
-</p>
-
-<p>
-The first four Clarity Cycles build the foundation.
-
-<br>Later cycles explore health, money, work, creativity, AI and other real-world domains.
-
-<br>The topics change.
-
-<br>The thinking skills remain the same.
-</p>
-
-
-
-
-<h2>What people say</h2>
-
-“The discipline that 5 minutes a day installs is priceless.”
-
-<br><br>
-“It’s subtle at first, then you notice it everywhere.”
-<br><br>
-
-“You do the drill once. The thinking carries into the rest of the day.”
-</section>
-
-<div class="spacer"></div>
-
-<br>
-Five minutes. Different angle each day.
-
-
-
-
-
-<br>Small practice.Compounding effect.
-<br><br>
-
+  <p>This trains meta-awareness — the ability to detect when thinking has shifted automatically.</p>
+  <p><strong>Reflection</strong></p>
+  <p>How quickly did drift appear?</p>
+</div>
+  </section>
+  <section class="section">
+    <h2>Why this exists</h2>
+<p>Most people train their bodies.</p>
+<p>Almost nobody trains how they think.</p>
+<p>Attention, decision-making and pattern recognition determine how well you operate.</p>
+<p>Clarity Cycle was built to train that.</p>
+  </section>
+  <section class="section">
+    <h2>The journey</h2>
+<p><strong>Cycle 1</strong> — Attention<br>
+<strong>Cycle 2</strong> — Pattern Recognition<br>
+<strong>Cycle 3</strong> — Strategic Thinking<br>
+<strong>Cycle 4</strong> — Cognitive Endurance</p>
+<p>Future cycles apply the same core skills to health, AI, money, creativity, relationships and other areas of life.</p>
+  </section>
+  <section class="section">
+    <h2>What people say</h2>
+<div class="quote">“It’s subtle at first, then you notice it everywhere.”</div>
+<div class="quote">“You do the drill once. The thinking carries into the rest of the day.”</div>
+<div class="quote">“The discipline that five minutes a day installs is priceless.”</div>
+  </section>
+  <section class="section">
+    <p>Five minutes. One drill. Different angle each day.</p>
+<p><strong>Small practice. Compounding effect.</strong></p>
 <a href="https://clarity-cycle.com/method.html" class="button">Read about the method</a>
-
-</section>
-
-<section class="section">
-
-<h2>Begin</h2>
-
-<p>
-Do the 5-minute drill. Then get on with your day.
-</p>
-
+  </section>
+  <section class="section">
+    <h2>Begin</h2>
+<p>Do the 5-minute drill. Then get on with your day.</p>
 <a href="https://buy.stripe.com/bJe00j6obal51Jy9vKaMU01" class="button">Start the first drill — £1.99/month</a>
-
-</section>
-
-<br><br>
-<div class="footer-note">
-  Questions?<br>
-  If something doesn’t land properly, just ask.<br>
-  <a href="mailto:hello@clarity-cycle.com">
-    hello@clarity-cycle.com
-  </a>
+  </section>
+  <div class="footer-note">
+    Questions?<br>
+    If something doesn’t land properly, just ask.<br>
+    <a href="mailto:andrew@clarity-cycle.com">andrew@clarity-cycle.com</a>
+  </div>
+  <footer>
+    <p style="margin-bottom:12px;">Small practice. Compounding effect.</p>
+<p style="margin-bottom:12px;">
+  <a href="index.html">Home</a>
+  &nbsp;|&nbsp;
+  <a href="method.html">Method</a>
+  &nbsp;|&nbsp;
+  <a href="resources.html">Resources</a>
+  &nbsp;|&nbsp;
+  <a href="about.html">About</a>
+</p>
+<p style="font-size:14px;">
+  Five minutes. One drill. Different angle each day.
+</p>
+  </footer>
 </div>
-  <footer style="
-    margin-top: 80px;
-    padding-top: 30px;
-    border-top: 1px solid #d8cdbb;
-    text-align: center;
-    font-size: 15px;
-    color: #666;
-">
-
-    <p style="margin-bottom: 12px;">
-        Small practice. Compounding effect.
-    </p>
-
-    <p style="margin-bottom: 12px;">
-        <a href="index.html" style="color: inherit; text-decoration: none;">Home</a>
-        &nbsp;|&nbsp;
-        <a href="method.html" style="color: inherit; text-decoration: none;">Method</a>
-        &nbsp;|&nbsp;
-        <a href="resources.html" style="color: inherit; text-decoration: none;">Resources</a>
- &nbsp;|&nbsp;
-      <a href="about.html" style="color: inherit; text-decoration: none;">About</a>
-    </p>
-
-    <p style="font-size: 14px;">
-        Five minutes. One drill. Different angle each day.
-    </p>
-
-</footer>
-</div>
-
 </body>
 </html>
