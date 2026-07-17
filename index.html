@@ -51,7 +51,33 @@ body{
     color:var(--accent);
     margin-bottom:8px;
 }
+.secondary-cta {
+  margin-top: 28px;
+  text-align: center;
+}
 
+.secondary-cta p {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.method-button {
+  display: inline-block;
+  padding: 14px 24px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  color: var(--text);
+  background: transparent;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.method-button:hover {
+  background: var(--accent);
+  color: #fff;
+}
 .quote-source{
     margin-top:10px;
     font-size:14px;
@@ -351,7 +377,12 @@ These aren't dramatic transformations. They're small changes that quietly compou
 <a href="https://buy.stripe.com/bJe00j6obal51Jy9vKaMU01" class="button">Start with five minutes</a>
 
 <div class="small">£1.99/month • Cancel anytime.</div>
-
+<div class="secondary-cta">
+  <p>Still curious?</p>
+  <a href="method.html" class="method-button">
+    See how Clarity Cycle works
+  </a>
+</div>
 </section>
 
   <div class="footer-note">
