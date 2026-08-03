@@ -91,22 +91,21 @@ body{
   margin:auto;
   padding:10px 24px 100px;
 }
-.logo{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  margin-bottom:24px;
-  font-weight:700;
-  letter-spacing:-0.04em;
-  font-size:33px;
+.brand-logo{
+  display:block;
+  width:min(100%, 430px);
+  margin:10px 0 38px;
+  text-decoration:none;
 }
-.logo-mark{
-  width:16px;
-  height:16px;
-  border-radius:50%;
-  background:var(--accent);
-  opacity:0.85;
-  flex-shrink:0;
+
+.brand-logo picture{
+  display:block;
+}
+
+.brand-logo img{
+  display:block;
+  width:100%;
+  height:auto;
 }
 .hero h1{
   font-size:27px;
@@ -198,9 +197,10 @@ footer a{
   .container{
     padding:10px 28px 90px;
   }
-  .logo{
-    font-size:33px;
-  }
+.brand-logo{
+  width:min(100%, 330px);
+  margin:6px 0 34px;
+}
   .hero h1{
     font-size:22px;
   }
@@ -237,10 +237,17 @@ footer a{
 </header>
 <div class="container">
 
-<div class="logo">
-<div class="logo-mark"></div>
-<div>Clarity Cycle</div>
-</div>
+<a href="index.html" class="brand-logo" aria-label="Clarity Cycle home">
+  <picture>
+    <source srcset="clarity-cycle-logo.webp" type="image/webp">
+    <img
+      src="clarity-cycle-logo.jpg"
+      alt="Clarity Cycle — Small practice. Compounding effect."
+      width="1085"
+      height="980"
+    >
+  </picture>
+</a>
 
 <section class="hero">
   <h1>Your thinking is probably costing you more than you realise.</h1>
@@ -250,9 +257,11 @@ footer a{
 
 
   <p>A five-minute daily drill to help you think more clearly, react less automatically and make better decisions.</p>
-<p>
-  <a href="https://buy.stripe.com/bJe00j6obal51Jy9vKaMU01" class="button">Start with five minutes</a>
-  <div class="small">£1.99/month • Cancel anytime</div>
+<a href="https://buy.stripe.com/bJe00j6obal51Jy9vKaMU01" class="button">
+  Start with five minutes
+</a>
+
+<div class="small">£1.99/month • Cancel anytime</div>
 </section>
 
 
