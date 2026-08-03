@@ -85,7 +85,7 @@ select {
 }
 
 .page-main {
-  padding-bottom: var(--space-24);
+  padding-bottom: var(--space-12);
 }
 
 .page-header {
@@ -253,7 +253,7 @@ select {
   display: flex;
   align-items: center;
   gap: var(--space-4);
-  margin: var(--space-16) 0;
+  margin: var(--space-12) 0;
 }
 
 .brand-divider::before,
@@ -271,7 +271,8 @@ select {
 
 /* One shared footer */
 .site-footer {
-  margin-top: var(--space-16);
+  .site-footer {
+  margin-top: var(--space-10);
   padding: var(--space-8) 0 var(--space-10);
   border-top: 1px solid var(--colour-line);
   color: #666;
