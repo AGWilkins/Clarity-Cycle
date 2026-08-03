@@ -14,7 +14,7 @@
   --text-md: 1.125rem;
   --text-lg: 1.375rem;
   --text-xl: clamp(1.75rem, 4vw, 2.4rem);
-  --text-hero: clamp(2.2rem, 6vw, 4rem);
+  --text-hero: clamp(2.2rem, 5vw, 3.4rem);;
 
   /* Spacing system: multiples of 4px */
   --space-1: 0.25rem;
@@ -37,7 +37,7 @@
 
   /* Layout */
   --content-width: 760px;
-  --reading-width: 690px;
+  --reading-width: 760px;
 }
 
 /* Reset */
@@ -324,7 +324,7 @@ select {
 }
 
 .hero h1 {
-  margin: 0 0 var(--space-6);
+  margin: 0 0 var(--space-4);
   font-size: var(--text-hero);
   line-height: 1.05;
   letter-spacing: -0.055em;
@@ -332,11 +332,11 @@ select {
 }
 
 .hero p {
-  margin: 0 auto var(--space-6);
+  margin: 0 auto var(--space-4);
 }
 
-.hero .button {
-  margin-top: var(--space-2);
+.hero .button{
+    margin-top:0;
 }
 
 .price-note {
@@ -514,8 +514,8 @@ select {
 }
 
 .home-brand__mark {
-  width: 116px;
-  height: 116px;
+  width: 96px;
+  height: 96px;
   margin: 0 auto var(--space-3);
   object-fit: contain;
 }
@@ -590,7 +590,7 @@ select {
 @media (max-width: 640px) {
   .home-brand {
     margin-top: var(--space-4);
-    margin-bottom: var(--space-10);
+    margin-bottom: var(--space-8);
   }
 
   .home-brand__mark {
