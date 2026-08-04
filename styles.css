@@ -88,13 +88,13 @@ select {
   padding-bottom: var(--space-24);
 }
 .hero-message {
-  margin: 42px auto 38px;
+  margin: 24px auto 24px;
   max-width: 720px;
   text-align: center;
 }
 
 .hero-message p {
-  margin: 0 0 30px;
+  margin: 0 0 24px;
   font-size: 15px;
   line-height: 1.65;
   color: var(--text);
@@ -105,24 +105,24 @@ select {
 }
 
 .hero-message .hero-summary {
-  margin-top: 44px;
+  margin-top: 24px;
   font-size: 15px;
   line-height: 1.65;
 }
 
 @media (max-width: 700px) {
   .hero-message {
-    margin: 32px auto 30px;
+    margin: 24px auto 24px;
   }
 
   .hero-message p {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     font-size: 15px;
     line-height: 1.6;
   }
 
   .hero-message .hero-summary {
-    margin-top: 36px;
+    margin-top: 24px;
     font-size: 15px;
   }
 }
