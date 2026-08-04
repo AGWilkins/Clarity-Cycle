@@ -17,15 +17,15 @@
   --text-hero: clamp(1.7rem, 3.2vw, 2.4rem);
 
   /* Spacing system: multiples of 4px */
-  --space-1: 0.1rem;
-  --space-2: 0.2rem;
-  --space-3: 0.3rem;
-  --space-4: 0.4rem;
-  --space-5: 0.5rem;
-  --space-6: 0.6rem;
-  --space-8: 0.7rem;
-  --space-10: 0.8rem;
-  --space-12: 0.9rem;
+  --space-1: 0.3rem;
+  --space-2: 0.4rem;
+  --space-3: 0.5rem;
+  --space-4: 0.6rem;
+  --space-5: 0.7rem;
+  --space-6: 0.8rem;
+  --space-8: 0.9rem;
+  --space-10: 1rem;
+  --space-12: 1rem;
   --space-16: 1rem;
   --space-20: 2rem;
   --space-24: 3rem;
