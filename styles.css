@@ -95,7 +95,7 @@ select {
 
 .hero-message p {
   margin: 0 0 30px;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.65;
   color: var(--text);
 }
@@ -106,7 +106,7 @@ select {
 
 .hero-message .hero-summary {
   margin-top: 44px;
-  font-size: 25px;
+  font-size: 18px;
   line-height: 1.65;
 }
 
@@ -117,13 +117,13 @@ select {
 
   .hero-message p {
     margin-bottom: 25px;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.6;
   }
 
   .hero-message .hero-summary {
     margin-top: 36px;
-    font-size: 21px;
+    font-size: 18px;
   }
 }
 .page-header {
